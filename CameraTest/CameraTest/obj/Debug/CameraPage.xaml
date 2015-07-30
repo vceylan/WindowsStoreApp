@@ -1,0 +1,51 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="CameraTest.CameraPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CameraTest"
+    xmlns:common="using:CameraTest.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='3' x:Name="backButton" Margin="39,59,39,0"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"                         />
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+        </Grid>
+        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Kamera Ekranı" VerticalAlignment="Top" Margin="120,0,0,0" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <Button x:ConnectionId='1' Content="Fotoğraf Çek" HorizontalAlignment="Left" Margin="117,47,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162"                        />
+        <TextBlock x:Name="emptyInfoText" HorizontalAlignment="Left" Margin="120,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Herhangi bir fotograf bulunmamakta!" VerticalAlignment="Top" Style="{StaticResource TitleTextBlockStyle}"/>
+        <GridView x:ConnectionId='2' x:Name="photoCollection" Margin="120,150,10,10" Grid.Row="1" SelectionMode="Multiple"                                                    />
+
+    </Grid>
+</Page>
+

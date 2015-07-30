@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VEYSELCEYLAN</Machine>
+    <WindowsUser>Veysel.Ceylan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>80ab85d0-c454-4522-8793-d6a65b29a8b4</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\CameraTest.exe">
+      <PackagePath>CameraTest.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\CameraPage.xbf">
+      <PackagePath>CameraPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\CameraTest.xr.xml">
+      <PackagePath>CameraTest.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
