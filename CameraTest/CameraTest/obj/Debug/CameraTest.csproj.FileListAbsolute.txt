@@ -35,3 +35,45 @@ c:\users\veysel.ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTe
 c:\users\veysel.ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\obj\Debug\qualifiers.txt.intermediate
 c:\users\veysel.ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\veysel.ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\obj\Debug\ProjectArchitectures.txt
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\App.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraPage.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\MainPage.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraTest.xr.xml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraTest.exe
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraTest.pdb
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\resources.pri
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\AppxManifest.xml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraTest.build.appxrecipe
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\App.g.i.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\App.g.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\CameraPage.g.i.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\CameraPage.g.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\MainPage.g.i.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\MainPage.g.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\XamlTypeInfo.g.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\App.xaml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\CameraPage.xaml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\MainPage.xaml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\App.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\CameraPage.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\MainPage.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\XamlSaveStateFile.xml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\CameraTest.exe
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\CameraTest.pdb
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\priconfig.xml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\priconfig.xml.intermediate
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\layout.resfiles
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\layout.resfiles.intermediate
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\resources.resfiles
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\resources.resfiles.intermediate
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\pri.resfiles
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\pri.resfiles.intermediate
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\qualifiers.txt
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\qualifiers.txt.intermediate
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\ProjectArchitectures.txt
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\DetailPage.xbf
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\DetailPage.g.i.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\DetailPage.g.cs
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\DetailPage.xaml
+E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\DetailPage.xbf

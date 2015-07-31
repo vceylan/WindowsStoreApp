@@ -1,4 +1,5 @@
 ﻿using CameraTest.Common;
+using CameraTest.Helper;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -66,6 +67,10 @@ namespace CameraTest
         /// session. The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            for (int i = 0; i < 10; i++)
+            {
+                itemList.Items.Add("Item " + i);
+            }
         }
 
         /// <summary>
@@ -109,6 +114,15 @@ namespace CameraTest
             {
                 this.Frame.Navigate(typeof(CameraPage));
             }
+        }
+
+        private void itemList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (this.Frame != null)
+            {
+                this.Frame.Navigate(typeof(DetailPage));
+            }
+            // MessageHelper.ShowMessageBox("Notice", string.Format("{0} clicked!", e.ClickedItem.ToString()));
         }
     }
 }

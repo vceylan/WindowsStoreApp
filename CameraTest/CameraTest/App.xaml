@@ -5,7 +5,7 @@
     xmlns:local="using:CameraTest"
     >
     <Application.Resources>
-        <x:String x:Key="AppName">Kamera Test Uygulaması</x:String>
+        <x:String x:Key="AppName">Camera Test App</x:String>
     </Application.Resources>
 
 </Application>

@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>80ab85d0-c454-4522-8793-d6a65b29a8b4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>C17105B36D4EEE0D4BC4B3D5048A4B3C9422FF4D2425F9E4CC233E9C1241DE67</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>80ab85d0-c454-4522-8793-d6a65b29a8b4_1.0.0.0_neutral__ewv4h6qdqwwb6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>80ab85d0-c454-4522-8793-d6a65b29a8b4_ewv4h6qdqwwb6!App</RegisteredUserModeAppID>
@@ -17,56 +17,60 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-30T12:41:43.803</Modified>
+      <Modified>2015-07-31T09:49:01.444</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\CameraTest.exe">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraTest.exe">
       <PackagePath>CameraTest.exe</PackagePath>
-      <Modified>2015-07-30T14:09:22.574</Modified>
+      <Modified>2015-07-31T13:29:09.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T03:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T03:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T03:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T03:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-07-30T11:35:15.883</Modified>
+      <Modified>2015-07-31T11:11:08.505</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\CameraPage.xbf">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraPage.xbf">
       <PackagePath>CameraPage.xbf</PackagePath>
-      <Modified>2015-07-30T13:34:42.587</Modified>
+      <Modified>2015-07-31T11:11:08.507</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\DetailPage.xbf">
+      <PackagePath>DetailPage.xbf</PackagePath>
+      <Modified>2015-07-31T11:11:08.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-07-30T11:35:15.887</Modified>
+      <Modified>2015-07-31T11:13:29.686</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\CameraTest.xr.xml">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\CameraTest.xr.xml">
       <PackagePath>CameraTest.xr.xml</PackagePath>
-      <Modified>2015-07-30T13:34:42.504</Modified>
+      <Modified>2015-07-31T11:13:29.670</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Veysel.Ceylan\documents\visual studio 2013\Projects\CameraTest\CameraTest\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\Private Development\WindowsStoreApp\CameraTest\CameraTest\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-30T12:41:43.459</Modified>
+      <Modified>2015-07-31T09:49:01.138</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

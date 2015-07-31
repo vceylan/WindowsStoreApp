@@ -124,7 +124,7 @@ namespace CameraTest.CameraTest_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
+            _typeNameTable = new string[10];
             _typeNameTable[0] = "CameraTest.CameraPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -133,9 +133,10 @@ namespace CameraTest.CameraTest_XamlTypeInfo
             _typeNameTable[5] = "String";
             _typeNameTable[6] = "CameraTest.Common.NavigationHelper";
             _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[8] = "CameraTest.MainPage";
+            _typeNameTable[8] = "CameraTest.DetailPage";
+            _typeNameTable[9] = "CameraTest.MainPage";
 
-            _typeTable = new global::System.Type[9];
+            _typeTable = new global::System.Type[10];
             _typeTable[0] = typeof(global::CameraTest.CameraPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -144,7 +145,8 @@ namespace CameraTest.CameraTest_XamlTypeInfo
             _typeTable[5] = typeof(global::System.String);
             _typeTable[6] = typeof(global::CameraTest.Common.NavigationHelper);
             _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[8] = typeof(global::CameraTest.MainPage);
+            _typeTable[8] = typeof(global::CameraTest.DetailPage);
+            _typeTable[9] = typeof(global::CameraTest.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +183,8 @@ namespace CameraTest.CameraTest_XamlTypeInfo
 
         private object Activate_0_CameraPage() { return new global::CameraTest.CameraPage(); }
         private object Activate_3_ObservableDictionary() { return new global::CameraTest.Common.ObservableDictionary(); }
-        private object Activate_8_MainPage() { return new global::CameraTest.MainPage(); }
+        private object Activate_8_DetailPage() { return new global::CameraTest.DetailPage(); }
+        private object Activate_9_MainPage() { return new global::CameraTest.MainPage(); }
         private void MapAdd_3_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -244,9 +247,18 @@ namespace CameraTest.CameraTest_XamlTypeInfo
                 xamlType = new global::CameraTest.CameraTest_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  CameraTest.MainPage
+            case 8:   //  CameraTest.DetailPage
                 userType = new global::CameraTest.CameraTest_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_8_DetailPage;
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  CameraTest.MainPage
+                userType = new global::CameraTest.CameraTest_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_MainPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
@@ -267,12 +279,22 @@ namespace CameraTest.CameraTest_XamlTypeInfo
             var that = (global::CameraTest.CameraPage)instance;
             return that.NavigationHelper;
         }
-        private object get_2_MainPage_DefaultViewModel(object instance)
+        private object get_2_DetailPage_DefaultViewModel(object instance)
+        {
+            var that = (global::CameraTest.DetailPage)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_3_DetailPage_NavigationHelper(object instance)
+        {
+            var that = (global::CameraTest.DetailPage)instance;
+            return that.NavigationHelper;
+        }
+        private object get_4_MainPage_DefaultViewModel(object instance)
         {
             var that = (global::CameraTest.MainPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_3_MainPage_NavigationHelper(object instance)
+        private object get_5_MainPage_NavigationHelper(object instance)
         {
             var that = (global::CameraTest.MainPage)instance;
             return that.NavigationHelper;
@@ -297,16 +319,28 @@ namespace CameraTest.CameraTest_XamlTypeInfo
                 xamlMember.Getter = get_1_CameraPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "CameraTest.DetailPage.DefaultViewModel":
+                userType = (global::CameraTest.CameraTest_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CameraTest.DetailPage");
+                xamlMember = new global::CameraTest.CameraTest_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "CameraTest.Common.ObservableDictionary");
+                xamlMember.Getter = get_2_DetailPage_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "CameraTest.DetailPage.NavigationHelper":
+                userType = (global::CameraTest.CameraTest_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CameraTest.DetailPage");
+                xamlMember = new global::CameraTest.CameraTest_XamlTypeInfo.XamlMember(this, "NavigationHelper", "CameraTest.Common.NavigationHelper");
+                xamlMember.Getter = get_3_DetailPage_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
             case "CameraTest.MainPage.DefaultViewModel":
                 userType = (global::CameraTest.CameraTest_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CameraTest.MainPage");
                 xamlMember = new global::CameraTest.CameraTest_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "CameraTest.Common.ObservableDictionary");
-                xamlMember.Getter = get_2_MainPage_DefaultViewModel;
+                xamlMember.Getter = get_4_MainPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CameraTest.MainPage.NavigationHelper":
                 userType = (global::CameraTest.CameraTest_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CameraTest.MainPage");
                 xamlMember = new global::CameraTest.CameraTest_XamlTypeInfo.XamlMember(this, "NavigationHelper", "CameraTest.Common.NavigationHelper");
-                xamlMember.Getter = get_3_MainPage_NavigationHelper;
+                xamlMember.Getter = get_5_MainPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             }

@@ -41,9 +41,9 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Kamera Ekranı" VerticalAlignment="Top" Margin="120,0,0,0" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <Button Content="Fotoğraf Çek" HorizontalAlignment="Left" Margin="117,47,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Click="TakePhoto_Click"/>
-        <TextBlock x:Name="emptyInfoText" HorizontalAlignment="Left" Margin="120,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Herhangi bir fotograf bulunmamakta!" VerticalAlignment="Top" Style="{StaticResource TitleTextBlockStyle}"/>
+        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Camera Page" VerticalAlignment="Top" Margin="120,0,0,0" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <Button Content="Take Photo" HorizontalAlignment="Left" Margin="117,47,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Click="TakePhoto_Click"/>
+        <TextBlock x:Name="emptyInfoText" HorizontalAlignment="Left" Margin="120,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="No photo found!" VerticalAlignment="Top" Style="{StaticResource TitleTextBlockStyle}"/>
         <GridView x:Name="photoCollection" Margin="120,150,10,10" Grid.Row="1" SelectionMode="Multiple" SelectionChanged="photoCollection_SelectionChanged"/>
 
     </Grid>

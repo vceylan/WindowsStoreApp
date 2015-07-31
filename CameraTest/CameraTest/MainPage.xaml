@@ -46,6 +46,7 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Ana Ekran" VerticalAlignment="Top" Margin="120,0,0,0" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Main Page" VerticalAlignment="Top" Margin="120,0,0,0" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <ListView x:Name="itemList" Margin="120,70,10,10" Grid.Row="1" HorizontalAlignment="Left" SelectionMode="None" Width="200" ItemClick="itemList_ItemClick" IsItemClickEnabled="True"/>
     </Grid>
 </Page>

@@ -1,5 +1,4 @@
 ﻿using CameraTest.Common;
-using CameraTest.Helper;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,19 +6,12 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
-using Windows.Media.Capture;
-using Windows.Storage;
-using Windows.Storage.Pickers;
-using Windows.Storage.Streams;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
@@ -29,12 +21,9 @@ namespace CameraTest
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class CameraPage : Page
+    public sealed partial class DetailPage : Page
     {
-        // Option 1
-        delegate void VoidMethodDelegate();
 
-        private enum DialogAnswer { Yes, No};
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
@@ -56,7 +45,7 @@ namespace CameraTest
         }
 
 
-        public CameraPage()
+        public DetailPage()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
@@ -113,71 +102,5 @@ namespace CameraTest
         }
 
         #endregion
-
-        private async void TakePhoto_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                // Using Windows.Media.Capture.CameraCaptureUI API to capture a photo
-                var dialog = new CameraCaptureUI();
-                Size aspectRatio = new Size(16, 9);
-                dialog.PhotoSettings.CroppedAspectRatio = aspectRatio;
-                var test = DisplayProperties.ResolutionScale;
-                StorageFile file = await dialog.CaptureFileAsync(CameraCaptureUIMode.Photo);
-
-                if (file != null)
-                {
-                    BitmapImage bitmapImage = new BitmapImage();
-                    using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read))
-                    {
-                        bitmapImage.SetSource(fileStream);
-                    }
-
-                    emptyInfoText.Visibility = Visibility.Collapsed;
-
-                    Image image = new Image();
-                    image.Source = bitmapImage;
-                    image.Height = image.Width = 200;
-                    image.Stretch = Stretch.UniformToFill;
-                    photoCollection.Items.Add(image);
-                }
-                else
-                {
-                    var messageDialog = new MessageDialog("No photo captured.", "Capture Error");
-                    messageDialog.ShowAsync();
-                }
-            }
-            catch (Exception ex)
-            {
-                var messageDialog = new MessageDialog(ex.Message, "Error");
-                messageDialog.ShowAsync();
-            }
-        }
-
-        private void photoCollection_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var photoCollection = sender as GridView;
-            if (photoCollection == null) return;
-            if (photoCollection.SelectedItems.Count > 2)
-            {
-                photoCollection.SelectedItems.Remove(photoCollection.SelectedItems[0]);
-            }
-        }
-
-        private async void backButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Option 1
-            //var callbacks = new Dictionary<string, Delegate>();
-            //callbacks.Add("Yes", new VoidMethodDelegate(navigationHelper.GoBack));
-            //callbacks.Add("No", null);
-            //MessageHelper.ShowMessageBox("Warning", "Do you want to quit before saving?", callbacks);
-
-            // Option 2
-            var result = await MessageHelper.ShowConfirmBox("Warning", "Do you want to quit before saving?");
-            if (result)
-            {
-                navigationHelper.GoBack();
-            }
-        }
     }
 }
